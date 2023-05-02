@@ -8,7 +8,7 @@ namespace Observer_Pattern
 {
     internal class Football:Ball
     {
-        public Position? position { get; set; }
+         Position position =new Position();
 
         private List<IObserver> _observers = new List<IObserver>();
 
@@ -33,7 +33,7 @@ namespace Observer_Pattern
             }
         }
 
-        public void GetBallPosition()
+        public void SetBallPosition()
         {
             this.position!.x = new Random().Next(0, 10);
             this.position!.y = new Random().Next(0, 10);

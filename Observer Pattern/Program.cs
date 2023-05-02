@@ -7,10 +7,13 @@
             Football football = new Football();
 
             Player player = new(football);
-            Referee referee = new(football);
+            football.Attach(player);
+            football.SetBallPosition();
 
-            player.Update();
-            referee.Update();
+
+            Referee referee = new(football);
+            football.Attach(referee);
+            football.SetBallPosition();
         }
     }
 }

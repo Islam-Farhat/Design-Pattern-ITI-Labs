@@ -8,10 +8,6 @@ namespace Observer_Pattern
 {
     internal class Player : IObserver
     {
-        public Player()
-        {
-            
-        }
         Football football;
 
         public Player(Football football)
@@ -20,7 +16,7 @@ namespace Observer_Pattern
         }
         public void Update()
         {
-            football.GetBallPosition();
+            Console.WriteLine("Update");
         }
     }
 }
