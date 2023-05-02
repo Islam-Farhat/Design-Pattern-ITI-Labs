@@ -6,12 +6,12 @@
         {
             Football football = new Football();
 
-            Player player = new(football);
+            Player player = new();
             football.Attach(player);
             football.SetBallPosition();
 
 
-            Referee referee = new(football);
+            Referee referee = new();
             football.Attach(referee);
             football.SetBallPosition();
         }

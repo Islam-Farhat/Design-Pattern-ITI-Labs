@@ -8,12 +8,6 @@ namespace Observer_Pattern
 {
     internal class Referee : IObserver
     {
-        Football football;
-
-        public Referee(Football football)
-        {
-            this.football = football;
-        }
         public void Update()
         {
             Console.WriteLine("Update Referee");
